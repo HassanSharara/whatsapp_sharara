@@ -3,11 +3,11 @@ import 'dart:convert';
 
 import 'package:whatsapp_author/src/Models/WhatsAppAuthor/whats_app_author.dart';
 import 'package:http/http.dart' as http;
-class ApiCaller {
-  
-  static Future<bool>sendOtpCode({
+class WhatsAppApiCaller {
+
+  static Future<bool>sendCodeToWhatsAppAccount({
     required final WhatsAppAuthor author,
-    required final String code,required final String to,
+    required final String code,required final String toPhoneNumber,
     final String languageCode = "ar",
     final Function(dynamic)? onApiCallError
   })async{
@@ -21,7 +21,7 @@ class ApiCaller {
 
     Map data = {
       "messaging_product": "whatsapp",
-      "to": to,
+      "to": toPhoneNumber,
       "type": "template",
       "template": {
         "name": author.templateName,

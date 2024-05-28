@@ -1,8 +1,8 @@
 name: whatsapp_author
-description: "A new Sharara Package for facilating Building Apps With Flutter."
+description: "A new Sharara Package for facilitating Building Apps With Flutter."
+homepage: https://github.com/HassanSharara
+repository: https://github.com/HassanSharara/whatsapp_sharara
 version: 0.0.1
-homepage:
-
 environment:
   sdk: '>=3.4.1 <4.0.0'
   flutter: ">=1.17.0"
@@ -53,3 +53,9 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+license: MIT
+
+platforms:
+  android:
+  ios:
+  web:
