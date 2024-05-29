@@ -2,7 +2,7 @@ name: whatsapp_author
 description: "A new Sharara Package for facilitating Building Apps With Flutter."
 homepage: https://github.com/HassanSharara
 repository: https://github.com/HassanSharara/whatsapp_sharara
-version: 0.0.2
+version: 0.0.3
 environment:
   sdk: '>=3.4.1 <4.0.0'
   flutter: ">=1.17.0"
